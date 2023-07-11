@@ -6,4 +6,11 @@
     </style>
 
     <style name="Theme.AksaraApp" parent="Base.Theme.AksaraApp" />
+
+    <style name="CustomOutlinedTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+    </style>
 </resources>

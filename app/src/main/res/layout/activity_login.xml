@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.login.LoginActivity"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_logo"
+            android:contentDescription="@string/app_logo" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aksara"
+                android:textStyle="bold"
+                android:fontFamily="@font/leaguespartan_semibold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preserve_culture"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/CustomOutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/textfield_selector">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:drawableTintMode="multiply"
+            android:hint="@string/enter_username" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/CustomOutlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:boxStrokeColor="@color/textfield_selector"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@android:color/darker_gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawablePadding="10dp"
+            android:drawableTintMode="multiply"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
