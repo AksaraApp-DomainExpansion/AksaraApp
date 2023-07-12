@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aksara_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.aksaraapp.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home"
+        />
+
+    <fragment
+        android:id="@+id/navigation_translate"
+        android:name="com.example.aksaraapp.ui.translate.TranslateFragment"
+        android:label="@string/translate"
+        tools:layout="@layout/fragment_translate"
+        />
+
+    <fragment
+        android:id="@+id/navigation_course"
+        android:name="com.example.aksaraapp.ui.course.CourseFragment"
+        android:label="@string/course"
+        tools:layout="@layout/fragment_course"
+        />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.aksaraapp.ui.cart.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart"
+        />
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.example.aksaraapp.ui.message.MessageFragment"
+        android:label="@string/message"
+        tools:layout="@layout/fragment_message"
+        />
+</navigation>

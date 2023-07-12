@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_24"
+        android:title="@string/home"
+        />
+
+    <item
+        android:id="@+id/navigation_translate"
+        android:icon="@drawable/ic_globe"
+        android:title="@string/translate"/>
+
+    <item
+        android:id="@+id/navigation_course"
+        android:icon="@drawable/ic_course_24"
+        android:title="@string/course"
+        />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_shopping_cart_24"
+        android:title="@string/cart"
+        />
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/ic_message_24"
+        android:title="@string/message"
+        />
+</menu>

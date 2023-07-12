@@ -32,5 +32,15 @@
     <string name="onboarding_image">Onboarding Image</string>
     <string name="ob_message1">Unlocking the Power of Words!</string>
     <string name="ob_message2">Bridging Language Barriers with the Power of Visual Translation</string>
+    <string name="home">Home</string>
+    <string name="translate">Translate</string>
+    <string name="course">Course</string>
+    <string name="cart">Cart</string>
+    <string name="message">Message</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="batak">Batak</string>
 
 </resources>

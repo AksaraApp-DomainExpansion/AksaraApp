@@ -11,51 +11,14 @@
     android:padding="30dp"
     >
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="90dp"
+        android:src="@drawable/app_logo_horizontal"
+        android:contentDescription="@string/app_name"
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
-        >
-        <ImageView
-            android:id="@+id/app_logo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/app_logo"
-            android:contentDescription="@string/app_logo"
-            android:layout_gravity="center_vertical"
-            />
-
-        <Space
-            android:layout_width="5dp"
-            android:layout_height="wrap_content"
-            />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_vertical"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/aksara"
-                android:textStyle="bold"
-                android:fontFamily="@font/leaguespartan_semibold"
-                android:textSize="24sp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/preserve_culture"
-                android:fontFamily="@font/leaguespartan_semibold"
-                android:textSize="12sp"
-                />
-        </LinearLayout>
-    </LinearLayout>
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -70,7 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        app:boxStrokeColor="@color/textfield_selector">
+        app:boxStrokeColor="@color/textfield_selector"
+        android:textColorHint="@color/black_50"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_login_username"
@@ -78,7 +43,8 @@
             android:layout_height="match_parent"
             android:drawablePadding="10dp"
             android:drawableTintMode="multiply"
-            android:hint="@string/enter_username" />
+            android:hint="@string/enter_username"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,7 +55,9 @@
         android:layout_marginTop="10dp"
         app:boxStrokeColor="@color/textfield_selector"
         app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@android:color/darker_gray">
+        app:passwordToggleTint="@android:color/darker_gray"
+        android:textColorHint="@color/black_50"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ed_login_password"
@@ -99,6 +67,7 @@
             android:drawableTintMode="multiply"
             android:hint="@string/enter_password"
             android:inputType="textPassword" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
