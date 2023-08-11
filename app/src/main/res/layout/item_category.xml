@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="300dp"
+    android:layout_height="390dp"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/image_category"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/voucher"
+            android:padding="5dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/voucher"
+            />
+
+        <TextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_class"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_category_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="5"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_read_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/read_more"
+            android:layout_marginVertical="18dp"
+            app:backgroundTint="@color/light_coral"
+            app:cornerRadius="10dp"
+            android:fontFamily="@font/poppins_medium"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -46,5 +46,7 @@
     <string name="get_your_voucher">Get your voucher</string>
     <string name="voucher">Voucher</string>
     <string name="category_class">Category Class</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="read_more">Read More</string>
 
 </resources>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.aksaraapp.data.dummy.CategoryDummyData
 import com.example.aksaraapp.data.dummy.VoucherDummyData
 import com.example.aksaraapp.databinding.FragmentHomeBinding
 
@@ -24,9 +25,16 @@ class HomeFragment : Fragment() {
         }
 
         val voucherAdapter = VoucherAdapter(VoucherDummyData.dataDummy)
+        val categoryAdapter = CategoryAdapter(CategoryDummyData.dataDummy)
 
         binding.rvVoucher.apply {
             binding.rvVoucher.adapter = voucherAdapter
+            layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
+            setHasFixedSize(true)
+        }
+
+        binding.rvCategory.apply {
+            binding.rvCategory.adapter = categoryAdapter
             layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
             setHasFixedSize(true)
         }
